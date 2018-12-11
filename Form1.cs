@@ -24,7 +24,7 @@ namespace Proyecto_2
                 checkedListBox1.SetItemChecked(i, true);
             }
 
-            if (Conceccion.Open() != null)
+            if (Coneccion.Open() != null)
             {
                 dataVista.DataSource = dtUsuario.Fill();
             }

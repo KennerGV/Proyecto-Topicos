@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -20,9 +20,9 @@ namespace Proyecto_2
        //Método a utilizar
         public static DataTable Fill() 
         {DataTable dt = new DataTable();
-        if ( Conceccion.Open() != null)
-        { SqlDataAdapter da = new SqlDataAdapter("Select Top 20 * from Datos" , Conceccion.Open()); 
-            da.Fill(dt); Conceccion.Close(); }  
+        if ( Coneccion.Open() != null)
+        { SqlDataAdapter da = new SqlDataAdapter("Select Top 20 * from Datos" , Coneccion.Open()); 
+            da.Fill(dt); Coneccion.Close(); }  
         else { dt = null; } return dt; }
 
     }
