@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Linq;
 namespace Proyecto_2
 {
-  
+  //Se crea para enlazar el sistema con la base de datos
    public class Coneccion
    {
        
@@ -25,6 +25,8 @@ namespace Proyecto_2
        public static SqlConnection Open()
        {
            con = null;
+         
+         // la funcionalidad de este try es para que compruebe la coneccion realizada
            try
            {
                con = new SqlConnection(Ruta);
